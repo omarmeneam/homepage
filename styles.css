@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.brand img {
+  width: 80px;
+  /* Adjust size as needed */
+  height: auto;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+
+}
+
+.nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  /* For absolute positioning of skills */
+}
+
+.left-menu,
+.content,
+.projects,
+.skills {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Transparent white background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Box shadow */
+}
+
+.left-menu h2,
+.content h2,
+.projects h2,
+.skills h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  /* Bold headings */
+}
+
+.left-menu ul,
+.content ul,
+.projects ul,
+.achievements ul {
+  list-style-type: none;
+}
+
+.left-menu ul li,
+.content ul li,
+.projects ul li,
+.achievements ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* Adjust font size */
+}
+
+/* Footer Styles */
+.footer {
+  padding: 15px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  /* For absolute positioning of contact info */
+}
+
+.about-me img {
+  width: 200px;
+  /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 150px;
+}
+
+.about-me h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-me p {
+  font-size: 18px;
+  color: #444;
+  /* Darker text color */
+}
+
+/* Contact Info Styles */
+.contact-info {
+  position: relative;
+  /*bottom: -215px;
+  left: 20px;*/
+
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* skills Styles */
+.skills {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Transparent white background */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.skills h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.skills img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* Projects Section */
+.projects {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Transparent white background */
+  padding: 20px;
+}
+
+.projects h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  /* Bold heading */
+}
+
+.projects ul {
+  list-style-type: none;
+}
+
+.projects ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* Adjust font size */
+}
+
+/* Custom Styles for Brand */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand h1 {
+  font-size: 36px;
+}
+
+.brand .t {
+  color: #000;
+}
+
+.brand .red {
+  color: red;
+}
+
+.t:hover {
+  color: red;
+}
+
+/* Full Page Video Background */
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Background Overlay */
+#background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Smooth scrolling for navigation links */
+.nav ul li a[href^="#"] {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.nav ul li a:hover,
+.social-links a:hover {
+  color: red;
+  /* Change text color on hover */
+}
